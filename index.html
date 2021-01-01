@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/question2.css">
+
+    <title>Survery Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Gaming survey</h1>
+            <p id="description">Please take a few minutes of your time to fill in the following survey.</p>
+        </header>
+
+        <hr>
+
+        <form id="survery-form">
+            <fieldset class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="input-text" placeholder="Enter your name" required />
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="input-text" placeholder="Enter your Email"
+                    required />
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="6" max="100" class="input-text" placeholder="Age" />
+            </fieldset>
+
+            <hr>
+
+            <fieldset class="form-group">
+                <label for="user-frequency">How often do you play video games?</label>
+                <label>
+                    <input type="radio" name="user-frequency" value="daily" class="input-radio" checked> Daily
+                </label>
+                <label>
+                    <input type="radio" name="user-frequency" value="several-times-a-week" class="input-radio"> Several
+                    times a week
+                </label>
+                <label>
+                    <input type="radio" name="user-frequency" value="several-times-a-month" class="input-radio"> Several
+                    times a month
+                </label>
+                <label>
+                    <input type="radio" name="user-frequency" value="several-times-a-year" class="input-radio"> Several
+                    times a month
+                </label>
+            </fieldset>
+
+            <hr>
+
+            <fieldset id="question2" class="form-group">
+                <!--* Titulo-->
+                <label class="question2-title">Do you play any of the games below on a game console?</label>
+
+                <!--* Options-->
+                <p class="question2-yes">Yes</p>
+                <p class="question2-sometimes">Sometimes</p>
+                <p class="question2-no">No</p>
+
+                <!--* Rows-->
+                <label for="adventure" class="question2-adventure"> Adventure</label>
+                <input type="radio" name="adventure" value="yes" class="adventure-yes">
+                <input type="radio" name="adventure" value="sometimes" class="adventure-sometimes">
+                <input type="radio" name="adventure" value="no" class="adventure-no">
+
+                <label for="action" class="question2-action"> Action</label>
+                <input type="radio" name="action" value="yes" class="action-yes">
+                <input type="radio" name="action" value="sometimes" class="action-sometimes">
+                <input type="radio" name="action" value="no" class="action-no">
+
+                <label for="arcade" class="question2-arcade"> Arcade</label>
+                <input type="radio" name="arcade" value="yes" class="arcade-yes">
+                <input type="radio" name="arcade" value="sometimes" class="arcade-sometimes">
+                <input type="radio" name="arcade" value="no" class="arcade-no">
+
+                <label for="logic" class="question2-logic"> Logic</label>
+                <input type="radio" name="logic" value="yes" class="logic-yes">
+                <input type="radio" name="logic" value="sometimes" class="logic-sometimes">
+                <input type="radio" name="logic" value="no" class="logic-no">
+
+                <label for="mmorpg" class="question2-mmorpg"> MMORPG</label>
+                <input type="radio" name="mmorpg" value="yes" class="mmorpg-yes">
+                <input type="radio" name="mmorpg" value="sometimes" class="mmorpg-sometimes">
+                <input type="radio" name="mmorpg" value="no" class="mmorpg-no">
+
+                <label for="rpg" class="question2-rpg"> Rpg</label>
+                <input type="radio" name="rpg" value="yes" class="rpg-yes">
+                <input type="radio" name="rpg" value="sometimes" class="rpg-sometimes">
+                <input type="radio" name="rpg" value="no" class="rpg-no">
+
+                <label for="simulator" class="question2-simulator"> Simulator</label>
+                <input type="radio" name="simulator" value="yes" class="simulator-yes">
+                <input type="radio" name="simulator" value="sometimes" class="simulator-sometimes">
+                <input type="radio" name="simulator" value="no" class="simulator-no">
+
+                <label for="sports" class="question2-sports"> Sports</label>
+                <input type="radio" name="sports" value="yes" class="sports-yes">
+                <input type="radio" name="sports" value="sometimes" class="sports-sometimes">
+                <input type="radio" name="sports" value="no" class="sports-no">
+
+                <label for="strategy" class="question2-strategy"> Strategy</label>
+                <input type="radio" name="strategy" value="yes" class="strategy-yes">
+                <input type="radio" name="strategy" value="sometimes" class="strategy-sometimes">
+                <input type="radio" name="strategy" value="no" class="strategy-no">
+
+                <label for="competitive" class="question2-competitive"> Competitive</label>
+                <input type="radio" name="competitive" value="yes" class="competitive-yes">
+                <input type="radio" name="competitive" value="sometimes" class="competitive-sometimes">
+                <input type="radio" name="competitive" value="no" class="competitive-no">
+            </fieldset>
+
+            <hr>
+
+            <fieldset class="form-group">
+                <label for="acquire-preference">How do you prefer to acquire video games?</label>
+                <label>
+                    <input type="radio" name="acquire-preference" value="i-borrow-games" class="input-radio" checked> I
+                    borrow games
+                </label>
+                <label>
+                    <input type="radio" name="acquire-preference" value="i-buy-games-for-shop" class="input-radio"> I
+                    buy gems for shop
+                </label>
+                <label>
+                    <input type="radio" name="acquire-preference" value="i-download-games" class="input-radio"> I
+                    download games
+                </label>
+                <label>
+                    <input type="radio" name="acquire-preference" value="i-rent-games-from-a-games-club"
+                        class="input-radio"> I rent games from a games club
+                </label>
+            </fieldset>
+
+            <hr>
+
+            <fieldset class="form-group">
+                <label for="console-preference">How do you prefer to acquire video games?</label>
+                <label>
+                    <input type="radio" name="console-preference" value="playstation" class="input-radio">
+                    PlayStation
+                </label>
+                <label>
+                    <input type="radio" name="console-preference" value="xbox" class="input-radio"> Xbox
+                </label>
+                <label>
+                    <input type="radio" name="console-preference" value="both" class="input-radio"> Both
+                </label>
+
+                <label>Other</label>
+                <input type="text" name="console-preference" class="input-text" placeholder="Type your answare">
+            </fieldset>
+
+            <hr>
+
+            <fieldset class="form-group">
+                <label for="acquire-preference">How much do you spend on games per year?</label>
+                <label>
+                    <input type="radio" name="spend-per-year" value="0-50" class="input-radio" checked> 0 - 50
+                </label>
+                <label>
+                    <input type="radio" name="spend-per-year" value="50-100" class="input-radio"> 50 - 100
+                </label>
+                <label>
+                    <input type="radio" name="spend-per-year" value="100-150" class="input-radio"> 100 - 150
+                </label>
+                <label>
+                    <input type="radio" name="spend-per-year" value="200-dollar-or-more"
+                        class="input-radio"> 200 dollar or more
+                </label>
+            </fieldset>
+
+            <hr>
+
+            <fieldset class="form-group">
+                <label for="game-console-expect">What do you expect from a game console?</label>
+                <input type="text" name="game-console-expect" id="game-console-expect" class="input-text" placeholder="Type your answare"/>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="game-console-account">What do you expect from a game console account?</label>
+                <input type="text" name="game-console-account" id="game-console-account" class="input-text" placeholder="Type your answare"/>
+            </fieldset>
+
+            <hr>
+
+            <fieldset class="form-group">
+                <label for="gender">Please confirm your gender?</label>
+                <label>
+                    <input type="radio" name="gender" value="male" class="input-radio" checked> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female" class="input-radio"> Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="none" class="input-radio"> I don't want to specify
+                </label>
+            </fieldset>
+
+            <hr>
+
+            <fieldset class="form-group">
+                <label for="location">Where are you from?</label>
+                <label>
+                    <input type="radio" name="location" value="europe" class="input-radio" checked> Europe
+                </label>
+                <label>
+                    <input type="radio" name="location" value="africa" class="input-radio"> Africa
+                </label>
+                <label>
+                    <input type="radio" name="location" value="asia" class="input-radio"> Asia
+                </label>
+                <label>
+                    <input type="radio" name="location" value="america" class="input-radio"> America
+                </label>
+                <label>
+                    <input type="radio" name="location" value="australia" class="input-radio"> Australia
+                </label>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Submit
+                </button>
+              </fieldset>
+
+    </div>
+    <!--* End of the container-->
+    </form>
+
+    <footer>
+        <h3>This survey was created in survio.com, you can se the original survey <a
+                href="https://www.survio.com/survey/d/D8Q9F2M7N4E0W5F0P" target="_blank">clicking here</a>.</h3>
+        <h3>Background photo by <a href="https://stocksnap.io/author/fiftyfish" target="_blank">50Fish</a> from <a
+                href="https://stocksnap.io" target="_blank">StockSnap</a></h3>
+    </footer>
+
+</body>
+
+</html>
