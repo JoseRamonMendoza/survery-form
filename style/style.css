@@ -103,7 +103,7 @@ label {
   margin: 0 0 0.8rem 0;
 }
 
-input[type=radio] {
+input[type=radio], input[type=checkbox] {
   transform: scale(1.2);
 }
 
@@ -115,6 +115,20 @@ input[type=radio] {
   display: block;
   width: 100%;
   height: 3.8rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  color: var(--input-text-color);
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+.input-checkbox {
+  margin-right: 0.625rem;
+}
+
+.input-textarea {
+  width: 100%;
+  min-height: 12rem;
   padding: 0.6rem 1.2rem;
   border-radius: 0.5rem;
   color: var(--input-text-color);

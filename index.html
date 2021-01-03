@@ -13,8 +13,6 @@
 </head>
 
 <body>
-
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <div class="container">
         <header class="header">
             <h1 id="title">Gaming survey</h1>
@@ -23,7 +21,7 @@
 
         <hr>
 
-        <form id="survery-form">
+        <form id="survey-form">
             <fieldset class="form-group">
                 <label id="name-label" for="name">Name</label>
                 <input type="text" name="name" id="name" class="input-text" placeholder="Enter your name" required />
@@ -127,29 +125,29 @@
             <hr>
 
             <fieldset class="form-group">
-                <label for="acquire-preference">How do you prefer to acquire video games?</label>
+                <label for="acquire-preference">How do you acquire video games?</label>
                 <label>
-                    <input type="radio" name="acquire-preference" value="i-borrow-games" class="input-radio" checked> I
+                    <input type="checkbox" name="acquire-preference" value="i-borrow-games" class="input-checkbox"> I
                     borrow games
                 </label>
                 <label>
-                    <input type="radio" name="acquire-preference" value="i-buy-games-for-shop" class="input-radio"> I
+                    <input type="checkbox" name="acquire-preference" value="i-buy-games-for-shop" class="input-checkbox"> I
                     buy gems for shop
                 </label>
                 <label>
-                    <input type="radio" name="acquire-preference" value="i-download-games" class="input-radio"> I
+                    <input type="checkbox" name="acquire-preference" value="i-download-games" class="input-checkbox"> I
                     download games
                 </label>
                 <label>
-                    <input type="radio" name="acquire-preference" value="i-rent-games-from-a-games-club"
-                        class="input-radio"> I rent games from a games club
+                    <input type="checkbox" name="acquire-preference" value="i-rent-games-from-a-games-club"
+                        class="input-checkbox"> I rent games from a games club
                 </label>
             </fieldset>
 
             <hr>
 
             <fieldset class="form-group">
-                <label for="console-preference">How do you prefer to acquire video games?</label>
+                <label for="console-preference">Which one do you prefer to play games on?</label>
                 <label>
                     <input type="radio" name="console-preference" value="playstation" class="input-radio">
                     PlayStation
@@ -168,23 +166,16 @@
             <hr>
 
             <fieldset class="form-group">
-                <label for="acquire-preference">How much do you spend on games per year?</label>
-                <label>
-                    <input type="radio" name="spend-per-year" value="0-50" class="input-radio" checked> 0 - 50
-                </label>
-                <label>
-                    <input type="radio" name="spend-per-year" value="50-100" class="input-radio"> 50 - 100
-                </label>
-                <label>
-                    <input type="radio" name="spend-per-year" value="100-150" class="input-radio"> 100 - 150
-                </label>
-                <label>
-                    <input type="radio" name="spend-per-year" value="200-dollar-or-more"
-                        class="input-radio"> 200 dollar or more
-                </label>
+                <label for="spend-per-year">How much do you spend on games per year?</label>
+                <select name="spend-per-year" class="input-text" id="dropdown">
+                    <option value="">--Please chose an option--</option>
+                    <option value="0-50">0 - 50</option>
+                    <option value="50-100">50 - 100</option>
+                    <option value="100-150">100 - 150</option>
+                    <option value="200-dollar-or-more">200 dollar or more</option>
+                </select>
             </fieldset>
 
-            <hr>
 
             <fieldset class="form-group">
                 <label for="game-console-expect">What do you expect from a game console?</label>
@@ -232,11 +223,17 @@
                 </label>
             </fieldset>
 
+            <hr>
+            <fieldset class="form-group">
+                <label for="comments">Any comments or suggestions?</label>
+                <textarea name="comments" id="comments" class="input-textarea" placeholder="Enter your comments here..."></textarea>
+            </fieldset>
+
             <fieldset class="form-group">
                 <button type="submit" id="submit" class="submit-button">
                   Submit
                 </button>
-              </fieldset>
+            </fieldset>
 
     </div>
     <!--* End of the container-->
