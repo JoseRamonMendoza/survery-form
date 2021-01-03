@@ -29,8 +29,6 @@ body {
   text-align: left;
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: var(--background-display), var(--hero-image);
-  /* Set a specific height */
-  height: 50%;
   /* Position and center the image to scale nicely on all screens */
   background-position: center center;
   background-repeat: no-repeat;
